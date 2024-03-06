@@ -1,0 +1,51 @@
+.filterRow {
+  width: 100%;
+  /* background-color: rgb(109, 107, 99); */
+  display: inline-flex;
+  column-gap: 50px;
+  padding: 0px 50px 20px 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.searchBox {
+  width: 300px;
+  margin-top: 10px;
+}
+
+.searchBox label {
+  width: 300px;
+}
+
+.searchBox input {
+  border-radius: 10px !important;
+}
+
+.listContainer {
+  margin: 50px;
+}
+
+.buttonСontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  column-gap: 50px;
+}
+
+.arrowButton {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.arrowImg {
+  height: 50px;
+}
+
+.rotate180 {
+  transform: rotate(180deg);
+}
+
+.currentPageNumber {}

@@ -2,6 +2,7 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './components/Layout/Layout'
 import NotFound from './components/NotFound/NotFound';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
