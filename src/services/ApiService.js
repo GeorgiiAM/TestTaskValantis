@@ -17,7 +17,7 @@ async function sendRequest(action, params, retryCount = RETRY_COUNT) {
     const authString = generateAuthString();
 
     try {
-        const response = await axios.post(API_ADDRESS_ARRAY[0], {
+        const response = await axios.post(API_ADDRESS_ARRAY[1], {
             action,
             params
         }, {
