@@ -16,7 +16,11 @@ function App() {
       path: '*',
       element: <NotFound />,
     },
-  ]);
+  ],
+    {
+      basename: "/TestTaskValantis/",
+    }
+  );
 
   return (
     <RouterProvider router={router} />
