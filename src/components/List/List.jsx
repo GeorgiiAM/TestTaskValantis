@@ -22,14 +22,14 @@ export default function List() {
     function changeName(event) {
         let newFilter = {};
         Object.assign(newFilter, filter);
-        newFilter["product"] = event.target.value;
+        newFilter["product"] = event.target.value.trim();
         setFilter(newFilter)
     }
 
     function changeBrand(event) {
         let newFilter = {};
         Object.assign(newFilter, filter);
-        newFilter["brand"] = event.target.value;
+        newFilter["brand"] = event.target.value.trim();
         setFilter(newFilter)
     }
 
@@ -130,7 +130,7 @@ export default function List() {
             <div className="buttonСontainer">
                 {showPrevButton &&
                     <button className="arrowButton" onClick={prevPage}>
-                        <img src="../../public/arrow.svg" alt='Назад' className='arrowImg rotate180' />
+                        <img src="arrow.svg" alt='Назад' className='arrowImg rotate180' />
                         Назад
                     </button>
                 }
@@ -140,7 +140,7 @@ export default function List() {
                 {showNextButton &&
                     <button className="arrowButton" onClick={nextPage}>
                         Вперед
-                        <img src="../../public/arrow.svg" alt='Вперед' className='arrowImg' />
+                        <img src="arrow.svg" alt='Вперед' className='arrowImg' />
                     </button>
                 }
             </div>
